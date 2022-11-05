@@ -1,0 +1,146 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <title>Title</title>
+    <!-- Required meta tags -->
+    <meta charset="utf-8" />
+    <meta
+      name="viewport"
+      content="width=device-width, initial-scale=1, shrink-to-fit=no"
+    />
+
+    <!-- Bootstrap CSS -->
+    <link
+      rel="stylesheet"
+      href="https://stackpath.bootstrapcdn.com/bootstrap/4.3.1/css/bootstrap.min.css"
+      integrity="sha384-ggOyR0iXCbMQv3Xipma34MD+dH/1fQ784/j6cY/iJTQUOhcWr7x9JvoRxT2MZw1T"
+      crossorigin="anonymous"
+    />
+  </head>
+  <body>
+    <div class="container">
+      <div class="row">
+        <div class="col-md-6">
+          <div class="card">
+            <div class="card-header">Bài tập mảng</div>
+            <div class="card-body">
+              <div class="form-group">
+                <label>Vui lòng nhập số:</label>
+                <input id="txtNumber" type="number" class="form-control" />
+              </div>
+              <button
+                class="mt-2 btn btn-success"
+                onclick="addNumber(txtNumber)"
+              >
+                Thêm số
+              </button>
+              <button
+                class="mt-2 btn btn-warning"
+                onclick="calSumPositiveNumbers()"
+              >
+                Tính tổng số dương
+              </button>
+              <button
+                class="mt-2 btn btn-danger"
+                onclick="countPositiveNumbers()"
+              >
+                Đếm số dương
+              </button>
+              <button class="mt-2 btn btn-primary" onclick="findMin()">
+                Tìm số nhỏ nhất
+              </button>
+              <button
+                class="mt-2 btn btn-dark"
+                onclick="findPositiveNumberMin()"
+              >
+                Tìm số dương nhỏ nhất
+              </button>
+              <button
+                class="mt-2 btn btn-success"
+                onclick="getLastEvenNumbers()"
+              >
+                Tìm số chẵn cuối cùng
+              </button>
+              <div class="form-group mt-2">
+                <label>Nhập vị trí 1:</label>
+                <input id="location1" type="number" class="form-control" />
+              </div>
+              <div class="form-group">
+                <label>Nhập vị trí 2:</label>
+                <input id="location2" type="number" class="form-control" />
+              </div>
+              <button class="mt-2 btn btn-info" onclick="changeLocation()">
+                Đổi chổ
+              </button>
+              <button class="mt-2 btn btn-info" onclick="orderArray()">
+                Sắp xếp theo giá trị tăng dần
+              </button>
+              <button
+                class="mt-2 btn btn-secondary"
+                onclick="findPrimeNumbers()"
+              >
+                Tìm số nguyên tố đầu tiên
+              </button>
+              <button
+                data-toggle="collapse"
+                data-target="#demo"
+                class="mt-2 btn btn-success"
+              >
+                Bài 9
+              </button>
+
+              <div id="demo" class="mt-2 collapse">
+                <div class="form-group">
+                  <label>Vui lòng nhập số:</label>
+                  <input id="addNumber" type="number" class="form-control" />
+                </div>
+                <button class="mt-2 btn btn-warning" onclick="addNumber2()">
+                  Thêm số
+                </button>
+                <button class="mt-2 btn btn-warning" onclick="countInteger()">
+                  Đếm số nguyên
+                </button>
+                <div id="infoListNumbers2" class="alert alert-success"></div>
+                <div id="infoCountInteger" class="alert alert-success"></div>
+              </div>
+
+              <button class="mt-2 btn btn-primary" onclick="compare()">
+                So sánh số lượng số dương và số lượng số âm
+              </button>
+            </div>
+            <div class="card-footer text-muted">
+              <div id="infoListNumbers"></div>
+              <div id="infoSumPositiveNumber"></div>
+              <div id="infoCountPositiveNumbers"></div>
+              <div id="infoMin"></div>
+              <div id="infoPositiveNumberMin"></div>
+              <div id="infoTheLastEvenNumber"></div>
+              <div id="infoChangeLocation"></div>
+              <div id="infoOrderArray"></div>
+              <div id="infoTheFirstPrimeNumber"></div>
+              <div id="infoCompare"></div>
+            </div>
+          </div>
+        </div>
+      </div>
+    </div>
+    <!-- Optional JavaScript -->
+    <!-- jQuery first, then Popper.js, then Bootstrap JS -->
+    <script
+      src="https://code.jquery.com/jquery-3.3.1.slim.min.js"
+      integrity="sha384-q8i/X+965DzO0rT7abK41JStQIAqVgRVzpbzo5smXKp4YfRvH+8abtTE1Pi6jizo"
+      crossorigin="anonymous"
+    ></script>
+    <script
+      src="https://cdnjs.cloudflare.com/ajax/libs/popper.js/1.14.7/umd/popper.min.js"
+      integrity="sha384-UO2eT0CpHqdSJQ6hJty5KVphtPhzWj9WO1clHTMGa3JDZwrnQq4sF86dIHNDz0W1"
+      crossorigin="anonymous"
+    ></script>
+    <script
+      src="https://stackpath.bootstrapcdn.com/bootstrap/4.3.1/js/bootstrap.min.js"
+      integrity="sha384-JjSmVgyd0p3pXB1rRibZUAYoIIy6OrQ6VrjIEaFf/nJGzIxFDsf4x0xIM+B07jRM"
+      crossorigin="anonymous"
+    ></script>
+    <script src="./js/main.js"></script>
+  </body>
+</html>
